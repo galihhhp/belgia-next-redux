@@ -1,0 +1,9 @@
+.cart {
+  &_test {
+    color: $blue-primary;
+
+    &:hover {
+      @include darken-hover;
+    }
+  }
+}
