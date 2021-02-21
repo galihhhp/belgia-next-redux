@@ -1,0 +1,9 @@
+.button {
+  background-color: $blue-primary;
+  color: white;
+
+  &:hover {
+    color: white;
+    @include darken-hover;
+  }
+}
