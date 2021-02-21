@@ -1,0 +1,13 @@
+.catalog-detail {
+  height: 82vh;
+
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+  }
+
+  &__left {
+  }
+
+  &__right {
+  }
+}

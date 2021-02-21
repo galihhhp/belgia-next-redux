@@ -1,10 +1,10 @@
-import { Title } from 'components';
+import { Title, Category } from 'components';
 
 const Catalog = () => {
   return (
     <div>
       <Title label="Belgian - Catalog" />
-      Enter
+      <Category />
     </div>
   );
 };

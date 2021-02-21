@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'bootstrap';
+@import 'fonts';
 @import 'mixin';
 
 @import './components/button';
@@ -8,8 +9,10 @@
 @import './components/item';
 @import './components/navbar';
 @import './components/wishlist-button';
+@import './components/card-detail-image';
 
 @import './pages/cart';
 @import './pages/catalog';
 @import './pages/catalog-detail';
 @import './pages/wishlist';
+@import './pages/home';

@@ -1,0 +1,19 @@
+.btn {
+  font-family: 'Roboto', sans-serif;
+
+  &__blue {
+    background-color: $blue-primary;
+    color: white;
+
+    &:hover {
+      @include hover(darken($blue-primary, 10%), white);
+    }
+  }
+
+  &__white {
+    border: 2px solid lightgray;
+    &:hover {
+      @include hover($blue-primary, white);
+    }
+  }
+}
