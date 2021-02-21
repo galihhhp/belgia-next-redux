@@ -6,8 +6,7 @@ import Navbar from './Navbar';
 import WishlistButton from './WishlistButton';
 import Title from './Title';
 import CardDetailImage from './CardDetailImage';
-import ProductSpecification from './ProductSpec';
-import ProductDescription from './ProductDesc';
+import CardDetailContent from './CardDetailContent';
 
 export {
   Button,
@@ -18,6 +17,5 @@ export {
   WishlistButton,
   Title,
   CardDetailImage,
-  ProductSpecification,
-  ProductDescription,
+  CardDetailContent,
 };

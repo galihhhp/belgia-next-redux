@@ -1,0 +1,11 @@
+.home {
+  height: 85vh;
+
+  &__content {
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 5rem;
+    }
+  }
+}

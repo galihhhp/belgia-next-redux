@@ -1,3 +1,4 @@
+import { Button } from 'components';
 
 const Category = () => {
   return (
@@ -5,20 +6,16 @@ const Category = () => {
       <div className="container pt-4">
         <div className="card">
           <div className="card-body ml-4">
-
-            <div className="row">
-              <h4>Katalog Produk</h4>
+            <div className="row cart-body--text">
+              <h4>Catalog Product</h4>
             </div>
 
             <div className="row pt-4 pb-2">
-
-              <button type="button" className="btn btn-light mr-3 rounded-pill">Makanan & Minuman</button>
-              <button type="button" className="btn btn-light mr-3 rounded-pill">Fashion</button>
-              <button type="button" className="btn btn-light mr-3 rounded-pill ">Elektronik</button>
-              <button type="button" className="btn btn-light mr-3 rounded-pill">Lainnya</button>
-            
+              <Button label="Food & Drink" rounded mr white />
+              <Button label="Fashion" rounded mr white />
+              <Button label="Electronic" rounded mr white />
+              <Button label="Others" rounded mr white />
             </div>
-
           </div>
         </div>
       </div>

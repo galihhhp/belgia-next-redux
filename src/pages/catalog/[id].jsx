@@ -1,23 +1,17 @@
-import {
-  CardDetailImage,
-  ProductSpecification,
-  ProductDescription,
-  Title,
-} from 'components';
+import { CardDetailImage, CardDetailContent, Title } from 'components';
 
 const CatalogDetail = () => {
   return (
     <>
       <Title label="Product Details" />
-      <div className="container d-flex justify-content-center align-items-center catalog-detail">
-        <div className="catalog-detail__left">
-          <CardDetailImage />
-        </div>
-        <div className="ml-5 catalog-detail__right">
-          <h1>Hammerstout</h1>
-          <h5>Hammerstout</h5>
-          <ProductSpecification />
-          <ProductDescription />
+      <div className="container card my-4 pt-3">
+        <div className="d-flex catalog-detail">
+          <div className="catalog-detail__left">
+            <CardDetailImage />
+          </div>
+          <div className="ml-5 catalog-detail__right">
+            <CardDetailContent />
+          </div>
         </div>
       </div>
     </>

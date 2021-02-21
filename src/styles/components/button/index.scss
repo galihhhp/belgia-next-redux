@@ -1,9 +1,19 @@
-.button {
-  background-color: $blue-primary;
-  color: white;
+.btn {
+  font-family: 'Roboto', sans-serif;
 
-  &:hover {
+  &__blue {
+    background-color: $blue-primary;
     color: white;
-    @include darken-hover;
+
+    &:hover {
+      @include hover(darken($blue-primary, 10%), white);
+    }
+  }
+
+  &__white {
+    border: 2px solid lightgray;
+    &:hover {
+      @include hover($blue-primary, white);
+    }
   }
 }
