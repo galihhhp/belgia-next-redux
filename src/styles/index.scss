@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'bootstrap';
+@import 'mixin';
+
+@import './components/button';
+@import './components/card-product';
+@import './components/category';
+@import './components/item';
+@import './components/navbar';
+@import './components/wishlist-button';
+
+@import './pages/cart';
+@import './pages/catalog';
+@import './pages/catalog-detail';
+@import './pages/wishlist';
