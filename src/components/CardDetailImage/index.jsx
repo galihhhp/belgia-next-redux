@@ -1,14 +1,15 @@
 import { Button } from 'components';
 
-const CardDetailImage = () => {
+const CardDetailImage = ({img, id}) => {
+  console.log({img, id})
   return (
-    <div className="d-flex flex-column card-detail-image">
-      <div className="mb-4">
-        <img src="https://placeimg.com/480/580/people" alt="Detail product" />
+    <div className="container">
+      <div className="pt-4">
+        <img src={img} alt={id}  />
       </div>
-      <div className="d-flex justify-content-between">
-        <Button label="Add to cart" blue block mr size="lg" />
-        <Button label="Add to cart" blue size="lg" />
+      <div className="text-center pt-4">
+        <Button label="Add to cart" blue block mr size="sm" />
+      
       </div>
     </div>
   );
