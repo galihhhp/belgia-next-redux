@@ -1,5 +1,9 @@
 .cart {
-  &_test {
-    color: $blue-primary;
+  display: flex;
+  justify-content: center;
+  
+  .container {
+    background-color: $background-white-primary;
+    
   }
 }
