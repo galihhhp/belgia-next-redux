@@ -1,15 +1,13 @@
 import { Provider } from 'react-redux';
-import { Navbar } from 'components';
 import store from 'state/store';
 import 'styles/global.scss';
+import Navbar from 'components/Navbar'
 
 const App = ({ Component, pageProps }) => {
   return (
     <Provider store={store}>
-      <>
-        <Navbar />
-        <Component {...pageProps} />
-      </>
+      <Navbar />
+      <Component {...pageProps} />
     </Provider>
   );
 };
