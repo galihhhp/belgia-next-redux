@@ -18,7 +18,7 @@ const Cart = ({productList}) => {
 
       <div className="cart">
       <div className="container my-4 pt-3">
-        <h5 className="pt-3"><strong>My Cart</strong></h5>
+        <h5 className="pt-3 font-weight-bold">My Cart</h5>
         <div className="card basket">
         
           {productList.map((productList) => (
@@ -34,18 +34,6 @@ const Cart = ({productList}) => {
 
   );
 };
-// const Cart = () => {
-//   return (
-//     <div>
-//       <Title label="Belgian - Cart" />
 
-//       <div className="cart">
-//       <div className="container my-4 pt-3">
-//         <h5 className="pt-3"><strong>My Cart</strong></h5>
-//       </div>
-//       </div>
-//     </div>
-//   );
-// };
 
 export default Cart;
