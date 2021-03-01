@@ -3,6 +3,7 @@ import { Button } from 'components';
 import { addToCart } from 'state';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export const getStaticProps = async () => {
   return {
@@ -13,6 +14,7 @@ export const getStaticProps = async () => {
 };
 
 const CardProduct = ({ img, id, name, location, price }) => {
+  const [product] = useState({ img, id, name, location, price });
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
 
@@ -33,7 +35,7 @@ const CardProduct = ({ img, id, name, location, price }) => {
               label={state.loading ? 'Loading...' : 'Add to cart'}
               blue
               size="md"
-              onClick={(id) => dispatch(addToCart(id))}
+              onClick={() => dispatch(addToCart(product))}
             />
           </div>
         </div>

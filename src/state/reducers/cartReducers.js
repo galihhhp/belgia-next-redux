@@ -23,8 +23,7 @@ const addToCartSuccess = (state, action) =>
     {
       cartItems: state.cartItems.concat(action.payload),
     },
-    { loading: false },
-    { error: null }
+    { loading: false }
   );
 const addToCartError = (state, action) =>
   Object.assign({}, state, { loading: false }, { error: action.error });
