@@ -16,6 +16,12 @@
       @include hover($blue-primary, white);
     }
   }
+
+  &__transparent {
+    border: none;
+    color: rgb(172, 0, 0);
+
+  }
   
 }
 

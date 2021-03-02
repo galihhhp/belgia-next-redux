@@ -1,6 +1,7 @@
-.cart {
-  display: flex;
+.cartpage {
+  display: table-row;
   justify-content: center;
+  grid-template-columns:auto;
   
   .container {
     background-color: $background-white-primary;

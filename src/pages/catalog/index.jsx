@@ -1,15 +1,13 @@
 import { Title, Category, CardProduct } from 'components';
-import { product } from 'configs/product/product';
+import { connect } from 'react-redux';
 
-export const getStaticProps = async () => {
+export const mapStateToProps =  (state) => {
   return {
-    props: {
-      productList: product,
-    },
+    products: state.shop.products,
   };
 };
 
-const Catalog = ({ productList }) => {
+const Catalog = ({ products }) => {
   return (
     <div>
       <Title label="Belgian - Catalog" />
@@ -17,8 +15,8 @@ const Catalog = ({ productList }) => {
 
       <div className="container pt-4 pb-4">
         <div className="card product">
-          {productList.map((productList) => (
-            <CardProduct key={productList.id} {...productList} />
+          {products.map((prod) => (
+            <CardProduct key={prod.id} productData = {prod} />
           ))}
         </div>
       </div>
@@ -26,4 +24,4 @@ const Catalog = ({ productList }) => {
   );
 };
 
-export default Catalog;
+export default connect(mapStateToProps)(Catalog);

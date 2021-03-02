@@ -7,7 +7,7 @@ import WishlistButton from './WishlistButton';
 import Title from './Title';
 import CardDetailImage from './CardDetailImage';
 import CardDetailContent from './CardDetailContent';
-import CardBasket from './CardBasket';
+import CartItems from './CartItems';
 
 
 export {
@@ -20,5 +20,5 @@ export {
   Title,
   CardDetailImage,
   CardDetailContent,
-  CardBasket,
+  CartItems
 };

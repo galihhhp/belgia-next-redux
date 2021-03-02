@@ -3,4 +3,7 @@ export {
   ADD_TO_CART_SUCCESS,
   ADD_TO_CART_ERROR,
   ADD_TO_CART_REQUEST,
+  REMOVE_ITEM,
+  ADJUST_QTY,
+  LOAD_CURRENT_ITEM,
 } from './cartTypes';
