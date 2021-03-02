@@ -4,7 +4,7 @@ export const product = [
     name: 'Vivo S1',
     img:
       'https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_301,h_301/https://www.azariatika.com/wp-content/uploads/2019/08/azariatika_Vivo_S1_forum_handphone_android.jpg',
-    price: 'Rp3.500.000',
+    price: 3500000,
     location: 'Kab. Bandung',
     shop: 'Bandung Elektronik',
     terjual: 58,
@@ -23,7 +23,7 @@ export const product = [
     name: 'Playstasion 5',
     img:
       'https://images.bisnis-cdn.com/posts/2020/11/04/1313430/playstation-5.jpg',
-    price: 'Rp10.000.000',
+    price: 10000000,
     location: 'Kota Surabaya',
     shop: 'Surabaya Elektronik',
     terjual: 58,
@@ -42,7 +42,7 @@ export const product = [
     name: 'Philips Air Fryer',
     img:
       'https://ecs7.tokopedia.net/img/cache/700/product-1/2019/9/2/66234059/66234059_0e8adc0d-1cae-4ffb-8e6e-dc920cca7b33_700_700',
-    price: 'Rp2.500.000',
+    price: 2500000,
     location: 'Kota Cimahi',
     shop: 'Cimahi Elektronik',
     terjual: 58,
@@ -61,7 +61,7 @@ export const product = [
     name: 'Gundam AF',
     img:
       'https://images-na.ssl-images-amazon.com/images/I/71SzkAE9OrL._AC_SY450_.jpg',
-    price: 'Rp2.000.000',
+    price: 2000000,
     location: 'Kota Palembang',
     shop: 'Palembang Toys',
     terjual: 58,
@@ -79,7 +79,7 @@ export const product = [
     id: 5,
     name: 'YNH Book',
     img: 'https://cf.shopee.co.id/file/d06900c7e6144938e598b7dbe4b72166',
-    price: 'Rp45.000',
+    price: 45000,
     location: 'Kota Solo',
     shop: 'Solo Book Store',
     terjual: 58,
@@ -98,7 +98,7 @@ export const product = [
     name: 'Light Saber',
     img:
       'https://images-na.ssl-images-amazon.com/images/I/41rvYpkxkuL._AC_SL1000_.jpg',
-    price: 'Rp4.000.000',
+    price: 4000000,
     location: 'Kota Bogor',
     shop: 'Bogor Toys',
     terjual: 58,
@@ -117,7 +117,7 @@ export const product = [
     name: 'Basreng Maicih',
     img:
       'https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//84/MTA-2611317/maicih_maicih-basreng-keripik-pedas-snack--100-g-_full02.jpg',
-    price: 'Rp15.000',
+    price: 15000,
     location: 'Kota Bandung',
     shop: 'Borma Bandung',
     terjual: 58,
@@ -136,7 +136,7 @@ export const product = [
     name: 'Yamato Sarden',
     img:
       'https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/MTA-6620584/yamato-sarden_surabaya---sarden-yamato-makanan-kaleng--155-g-_full25.jpg',
-    price: 'Rp25.000',
+    price: 25000,
     location: 'DKI Jakarta',
     shop: 'Toserba Jakarta',
     terjual: 58,
@@ -155,7 +155,7 @@ export const product = [
     name: 'Sosis Sapi Pronas',
     img:
       'https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//108/MTA-8890649/pronas_pronas_sosis_sapi_kemasan_kaleng_325gr_full01_k9x8sfp1.jpg',
-    price: 'Rp35.000',
+    price: 35000,
     location: 'Bali',
     shop: 'Warung Bali',
     terjual: 58,
@@ -174,7 +174,7 @@ export const product = [
     name: 'Mens Distressed Jeans',
     img:
       'https://static.tokopedia.net/blog/wp-content/uploads/2019/05/1.-Celana-Nudie-Jeans-300x300.jpg',
-    price: 'Rp1.500.000',
+    price: 1500000,
     location: 'Kota Bandung',
     shop: 'Bandung Store',
     terjual: 58,
@@ -192,7 +192,7 @@ export const product = [
     id: 11,
     name: 'Linen Kimono',
     img: 'https://cf.shopee.co.id/file/43f41ccf7e13372a3bc573faa6cbdd85',
-    price: 'Rp350.000',
+    price: 350000,
     location: 'Kota Semarang',
     shop: 'Semarang Store',
     terjual: 58,
@@ -211,7 +211,7 @@ export const product = [
     name: 'Hip-Hop Hoodie',
     img:
       'https://ae01.alicdn.com/kf/Hc4da1cbfc28f4f16889128b7860cd98bi/Hoodie-Sweatshirt-Mens-Hip-Hop-Pullover-Hoodies-Streetwear-Casual-Fashion-Clothes-colorblock-hoodie-cotton.jpg',
-    price: '500.000',
+    price: 500000,
     location: 'Kota Bogor',
     shop: 'Bogor Store',
     terjual: 58,

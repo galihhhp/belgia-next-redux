@@ -1,7 +1,17 @@
 import Link from 'next/link';
 import ROUTES from 'configs/routes';
+import {connect} from 'react-redux'
+import {useState, useEffect} from 'react'
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
+  const [cartCount, setCartCount] = useState(0)
+  useEffect(()=>{
+    let count = 0;
+    cart.forEach(item => {
+      count += item.qty
+    })
+    setCartCount(count)
+  }, [cart, cartCount])
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light justify-content-between">
@@ -42,6 +52,9 @@ const Navbar = () => {
                       </svg>
                     </span>
                     My Cart
+                    <span className="ml-1 text-danger">
+                    {cartCount}
+                    </span>
                   </a>
                 </Link>
               </li>
@@ -72,5 +85,9 @@ const Navbar = () => {
     </div>
   );
 };
-
-export default Navbar;
+const mapStateToProps = state => {
+  return{
+    cart: state.shop.cart
+  }
+}
+export default connect(mapStateToProps)(Navbar);
