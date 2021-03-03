@@ -24,19 +24,15 @@ const Cart = ({ cart, result }) => {
     <div className="">
       <Title label="Belgian - Cart" />
 
-      <div className="row pt-4 pb-4">
-        <div className="card product col">
+      <div className="container pt-4 pb-4">
+        <div className="card product">
           {cart.length ? (
-            cart.map((item) =>
-            <>
-          <CartItems key={item.id}itemData={item} />
-        
-          <div>
-          {/* <span>TOTAL: ({totalItems} items)</span>
-          <span>{result='Rp'+ totalPrice.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 2})}</span> */}
-          </div>
-        </>
-          )) : (
+            cart.map((item) => (
+              <div>
+                <CartItems key={item.id} itemData={item} />
+              </div>
+            ))
+          ) : (
             <div className="text-center pt-4 pb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,8 +49,22 @@ const Cart = ({ cart, result }) => {
             </div>
           )}
         </div>
+
+        <span>TOTAL: </span>
+        <span>
+          {
+            (result =
+              'Rp' +
+              totalPrice.toLocaleString(undefined, {
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2,
+              }))
+          }
+
+        </span>
       </div>
     </div>
+    
   );
 };
 const mapStateToProps = (state) => {

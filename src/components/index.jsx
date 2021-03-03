@@ -8,6 +8,8 @@ import Title from './Title';
 import CardDetailImage from './CardDetailImage';
 import CardDetailContent from './CardDetailContent';
 import CartItems from './CartItems';
+import Wishlist from './Wishlist';
+
 
 
 export {
@@ -20,5 +22,6 @@ export {
   Title,
   CardDetailImage,
   CardDetailContent,
-  CartItems
+  CartItems,
+  Wishlist
 };

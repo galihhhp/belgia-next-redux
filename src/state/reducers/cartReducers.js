@@ -5,6 +5,7 @@ import {
   ADD_TO_CART_REQUEST,
   REMOVE_ITEM,
   ADJUST_QTY,
+  ADD_WISHLIST,
   LOAD_CURRENT_ITEM
 } from 'state/types';
 import { product } from 'configs/product/product';
@@ -15,7 +16,8 @@ const initialState = {
   loading: false,
   error: null,
   products: product,
-  currentItem: null
+  currentItem: null,
+  wishlist: []
 };
 
 const addToCartRequest = (state) =>
@@ -60,6 +62,18 @@ const cartReducers = (state = initialState, action) => {
           : item
           ),
       };
+      case ADD_WISHLIST:
+      const items = state.products.find(prod => prod.id === action.payload.id)
+      const inWishlist = state.wishlist.find(items => items.id === action.payload.id ? true : false)
+      return { ...state,
+        cart: inWishlist
+        ? state.wishlist.map(items =>
+          items.id === action.payload.id
+          ? {...items, qty: items.qty + 1}
+          : items)
+        : [...state.wishlist, {...items, qty: 1}],
+      }
+
     case LOAD_CURRENT_ITEM:
       return{
         ...state,

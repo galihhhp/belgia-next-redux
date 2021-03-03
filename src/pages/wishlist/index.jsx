@@ -1,29 +1,25 @@
-import { Title, CardProduct } from 'components';
-import { product } from 'configs/product/product';
+import { Title, Wishlist } from 'components';
+import { connect } from 'react-redux';
 
-export const getStaticProps = async () => {
+export const mapStateToProps =  (state) => {
   return {
-    props: {
-      productList: product,
-    },
+    wishlist: state.shop.wishlist,
   };
 };
 
-const Catalog = ({ productList }) => {
+const Catalog = ({ wishlist }) => {
   return (
     <div>
       <Title label="Belgian - Catalog" />
-
       <div className="container pt-4 pb-4">
         <div className="card product">
-        <h5 className="mt-3 font-weight-bold">Wishlist</h5>
-          {productList.map((productList) => (
-            <CardProduct key={productList.id} {...productList} />
+          {wishlist.map((prod) => (
+            <Wishlist key={prod.id} itemWishlist = {prod} />
           ))}
         </div>
-        </div>
       </div>
+    </div>
   );
 };
 
-export default Catalog;
+export default connect(mapStateToProps)(Catalog);

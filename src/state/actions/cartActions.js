@@ -5,6 +5,7 @@ import {
   ADD_TO_CART_SUCCESS,
   REMOVE_ITEM,
   ADJUST_QTY,
+  ADD_WISHLIST,
   LOAD_CURRENT_ITEM
   
 } from '../types/cartTypes';
@@ -56,3 +57,13 @@ export const addToCart = (payload) => async (dispatch) => {
     dispatch({ type: ADD_TO_CART_ERROR, payload: error });
   }
 };
+
+export const addWishlist = (itemID) => {
+  return {
+  type: ADD_WISHLIST,
+  payload: {
+    id: itemID
+  }
+  }
+};
+

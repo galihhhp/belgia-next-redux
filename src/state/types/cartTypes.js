@@ -5,3 +5,5 @@ export const ADD_TO_CART_ERROR = 'ADD_TO_CART_ERROR';
 export const REMOVE_ITEM = 'REMOVE_ITEM'
 export const ADJUST_QTY= 'ADJUST_QTY'
 export const LOAD_CURRENT_ITEM= 'LOAD_CURRENT_ITEM'
+export const ADD_WISHLIST= 'ADD_WISHLIST'
+
