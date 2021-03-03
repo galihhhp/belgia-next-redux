@@ -1,8 +1,10 @@
-// import { combineReducers } from 'redux';
-// import cartReducer from './cart/cartReducers';
+import { combineReducers } from 'redux';
+import cartReducer from './reducers/cartReducers';
+import filterReducer from './reducers/filterReducers';
 
-// const rootReducer = combineReducers({
-//   cart: cartReducer,
-// });
+const rootReducer = combineReducers({
+  cart: cartReducer,
+  filter: filterReducer
+});
 
-// export default rootReducer;
+export default rootReducer;

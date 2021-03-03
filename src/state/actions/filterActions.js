@@ -1,7 +1,7 @@
-export const addFilter = () => ({
-  type: ADD_FILTER,
-});
+import {
+  TOGGLE_IS_FILTERED
+} from '../types/filterTypes';
 
-export const addFilter = () => ({
-  type: ADD_FILTER,
+export const toggleFilter = () => ({
+  type: TOGGLE_IS_FILTERED,
 });

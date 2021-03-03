@@ -6,6 +6,5 @@ export {
 } from './cartTypes';
 
 export {
-  ADD_TO_FILTER,
-  REMOVE_FROM_FILTER
+  TOGGLE_IS_FILTERED
 } from './filterTypes';

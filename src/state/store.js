@@ -3,8 +3,8 @@ import { cartReducers } from 'state';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 // import { composeWithReduxDevTools } from 'redux-devtools-extension';
-// import rootReducer from './rootReducer';
+import rootReducer from './rootReducer';
 
-const store = createStore(cartReducers, applyMiddleware(logger, thunk));
+const store = createStore(rootReducer, applyMiddleware(logger, thunk));
 
 export default store;

@@ -1,6 +1,5 @@
 import {
-  ADD_TO_FILTER,
-  REMOVE_FROM_FILTER
+  TOGGLE_IS_FILTERED
 } from 'state/types';
 
 const initialState = {
@@ -8,5 +7,15 @@ const initialState = {
 };
 
 const filterReducers = (state = initialState, action) => {
-  return state;
+  switch (action.type) {
+    case TOGGLE_IS_FILTERED:
+      return {
+        ...state,
+        isFiltered: !state.isFiltered,
+      };
+    default:
+      return state;
+  }
 }
+
+export default filterReducers

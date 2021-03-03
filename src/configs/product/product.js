@@ -17,6 +17,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'electronic',
+    isFiltered: false,
   },
   {
     id: 2,
@@ -36,6 +37,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'electronic',
+    isFiltered: false,
   },
   {
     id: 3,
@@ -55,6 +57,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'electronic',
+    isFiltered: false,
   },
   {
     id: 4,
@@ -74,6 +77,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'others',
+    isFiltered: false,
   },
   {
     id: 5,
@@ -92,6 +96,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'others',
+    isFiltered: false,
   },
   {
     id: 6,
@@ -111,6 +116,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'others',
+    isFiltered: false,
   },
   {
     id: 7,
@@ -130,6 +136,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'culinary',
+    isFiltered: false,
   },
   {
     id: 8,
@@ -149,6 +156,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'culinary',
+    isFiltered: false,
   },
   {
     id: 9,
@@ -168,6 +176,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'culinary',
+    isFiltered: false,
   },
   {
     id: 10,
@@ -187,6 +196,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'Fashion',
+    isFiltered: false,
   },
   {
     id: 11,
@@ -205,6 +215,7 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'Fashion',
+    isFiltered: false,
   },
   {
     id: 12,
@@ -224,5 +235,6 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'Fashion',
+    isFiltered: false,
   },
 ];
