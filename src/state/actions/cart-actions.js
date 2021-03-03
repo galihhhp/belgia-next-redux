@@ -6,15 +6,15 @@ import {
   REMOVE_ITEM,
   ADJUST_QTY,
   LOAD_CURRENT_ITEM
-  
-} from '../types/cartTypes';
+
+} from '../types/cart-types';
 
 export const addItem = (itemID) => {
   return {
-  type: ADD_ITEM,
-  payload: {
-    id: itemID
-  }
+    type: ADD_ITEM,
+    payload: {
+      id: itemID
+    }
   }
 };
 
