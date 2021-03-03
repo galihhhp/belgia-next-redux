@@ -59,15 +59,15 @@ const CartItems = ({
           />
           <label htmlFor="qty"> Qty </label>
           <div className="mr-3">
-          <input
-            min="1"
-            type="number"
-            width="5px"
-            id="qty"
-            name="qty"
-            value={input}
-            onChange={onChangeHandler}
-          />
+            <input
+              min="1"
+              type="number"
+              width="5px"
+              id="qty"
+              name="qty"
+              value={input}
+              onChange={onChangeHandler}
+            />
           </div>
         </div>
       </div>

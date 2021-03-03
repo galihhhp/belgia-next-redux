@@ -1,13 +1,13 @@
-import Button from './Button';
-import CardProduct from './CardProduct';
-import Category from './Category';
-import Item from './Item';
-import Navbar from './Navbar';
-import WishlistButton from './WishlistButton';
-import Title from './Title';
-import CardDetailImage from './CardDetailImage';
-import CardDetailContent from './CardDetailContent';
-import CartItems from './CartItems';
+import Button from './button';
+import CardProduct from './card-product';
+import Category from './category';
+import Item from './item';
+import Navbar from './navbar';
+import WishlistButton from './wishlist-button';
+import Title from './title';
+import CardDetailImage from './card-detail-image';
+import CardDetailContent from './card-detail-content';
+import CartItems from './cart-items';
 
 
 export {
