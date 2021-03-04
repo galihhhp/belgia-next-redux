@@ -1,3 +1,3 @@
-import cartReducers from './cartReducers';
+import cartReducers from './cart-reducers';
 
 export { cartReducers };

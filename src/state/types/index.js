@@ -6,4 +6,4 @@ export {
   REMOVE_ITEM,
   ADJUST_QTY,
   LOAD_CURRENT_ITEM,
-} from './cartTypes';
+} from './cart-types';
