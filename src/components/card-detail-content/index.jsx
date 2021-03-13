@@ -13,7 +13,7 @@ const CardDetailContent = ({
   price,
 }) => {
   return (
-    <div className="container pr-1 ml-4">
+    <div className="container pr-1 ml-4 card-detail-content">
       <div className="card border-0">
         <h2 className="font-weight-bold">{name}</h2>
         <p>{shop}</p>

@@ -3,12 +3,12 @@ import CardProduct from './card-product';
 import Category from './category';
 import Item from './item';
 import Navbar from './navbar';
-import WishlistButton from './wishlist-button';
+import WishlistItem from './wishlist-items';
 import Title from './title';
 import CardDetailImage from './card-detail-image';
 import CardDetailContent from './card-detail-content';
 import CartItems from './cart-items';
-
+import Icon from './icon';
 
 export {
   Button,
@@ -16,9 +16,10 @@ export {
   Category,
   Item,
   Navbar,
-  WishlistButton,
+  WishlistItem,
   Title,
   CardDetailImage,
   CardDetailContent,
-  CartItems
+  CartItems,
+  Icon
 };

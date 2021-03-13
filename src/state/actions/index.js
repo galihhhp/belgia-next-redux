@@ -1,1 +1,2 @@
-export { addItem, addToCart, removeFromCart, adjustItemQty } from './cart-actions';
+export { addItem, addToCart, removeFromCart, adjustItemQty, addToWishlist } from './cart-actions';
+
