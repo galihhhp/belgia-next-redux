@@ -5,9 +5,19 @@ import {
   ADD_TO_CART_SUCCESS,
   REMOVE_ITEM,
   ADJUST_QTY,
-  LOAD_CURRENT_ITEM
+  LOAD_CURRENT_ITEM,
+  ADD_TO_WISHLIST
 
 } from '../types/cart-types';
+
+export const addToWishlist =(itemID) => {
+  return {
+    type: ADD_TO_WISHLIST,
+    payload: {
+      id: itemID
+    }
+  }
+}
 
 export const addItem = (itemID) => {
   return {

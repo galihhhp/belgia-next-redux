@@ -1,0 +1,11 @@
+.icon-trash {
+    .btn {
+        border-radius: 50%;
+        background-color: $background-primary;
+        padding: 1px;
+         &:hover {
+          @include hover(darken(red, 10%), white);
+        }
+        }
+    
+    }
