@@ -1,6 +1,6 @@
 import { Button } from 'components';
 
-const Category = () => {
+const Category = ({filter, categories}) => {
   return (
     <div>
       <div className="container pt-4">
@@ -11,10 +11,15 @@ const Category = () => {
             </div>
 
             <div className="row pt-4 pb-2">
-              <Button label="Food & Drink" rounded mr white />
-              <Button label="Fashion" rounded mr white />
-              <Button label="Electronic" rounded mr white />
-              <Button label="Others" rounded mr white />
+              { categories.map((cat, i)=>{
+              return <Button label="Food & Drink" 
+              rounded mr white 
+              onClick={() => filter(cat)}
+              key={i}
+              label={cat}
+              />
+            })}
+              
             </div>
           </div>
         </div>

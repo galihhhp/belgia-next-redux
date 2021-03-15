@@ -13,6 +13,8 @@ const Button = ({
   rounded,
   disabled,
   onClick,
+  value,
+  onChange
 }) => {
   return (
     <button
@@ -31,6 +33,8 @@ const Button = ({
       )}
       disabled={disabled}
       onClick={onClick}
+      value={value}
+      onChange={onChange}
     >
       {label && label}
     </button>

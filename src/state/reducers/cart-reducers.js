@@ -5,17 +5,16 @@ import {
   ADD_TO_CART_REQUEST,
   REMOVE_ITEM,
   ADJUST_QTY,
-  LOAD_CURRENT_ITEM
+  LOAD_CURRENT_ITEM,
 } from 'state/types';
 import { product } from 'configs/product/product';
 
 const initialState = {
   cart: [],
-  item: 20,
   loading: false,
   error: null,
   products: product,
-  currentItem: null
+  currentItem: null,
 };
 
 const addToCartRequest = (state) =>
@@ -57,7 +56,7 @@ const cartReducers = (state = initialState, action) => {
         ...state,
         cart: state.cart.map((item) =>
           item.id === action.payload.id
-            ? { ...item, qty: action.payload.qty }
+            ? { ...item, qty: +action.payload.qty }
             : item
         ),
       };
@@ -66,7 +65,6 @@ const cartReducers = (state = initialState, action) => {
         ...state,
         currentItem: action.payload,
       }
-
     case ADD_TO_CART_REQUEST:
       return addToCartRequest(state);
     case ADD_TO_CART_SUCCESS:

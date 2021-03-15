@@ -12,7 +12,9 @@ const Home = () => {
   return (
     <div className="container d-flex justify-content-center align-items-center home">
       <Title label="Belgian - Home" />
-      <div className="d-flex flex-column justify-content-center align-items-center w-100 home__content">
+      <div 
+      className="d-flex flex-column justify-content-center align-items-center w-100 home__content" 
+      data-aos="zoom-in">
         <h1>Welcome to Belgian Shop</h1>
         <h4 className="mb-5">
           We provide all your needs and you can get it from home

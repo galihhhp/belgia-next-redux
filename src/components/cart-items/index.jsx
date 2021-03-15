@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from 'next/link'
 import { connect } from "react-redux";
-import {Button, Icon} from 'components'
+import {Icon} from 'components'
 import {
   adjustItemQty,
   removeFromCart,
@@ -11,7 +11,7 @@ import {
 
 
 const CartItems = ({   
-  adjustQty,
+  adjustItemQty,
   removeFromCart,
   itemData,
   result}) => {
@@ -19,7 +19,7 @@ const CartItems = ({
     
     const onChangeHandler = (e) => {
       setInput(e.target.value);
-      adjustQty(itemData.id, e.target.value);
+      adjustItemQty(itemData.id, e.target.value);
     };
   return (
     <div className="cart-items">
@@ -82,7 +82,7 @@ const CartItems = ({
 
 const mapDispatchToProps = (dispatch, state) => {
   return {
-    adjustQty: (id, value) => dispatch(adjustItemQty(id, value)),
+    adjustItemQty: (id, value) => dispatch(adjustItemQty(id, value)),
     removeFromCart: (id) => dispatch(removeFromCart(id)),
     loading: state.loading,
   };
