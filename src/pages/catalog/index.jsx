@@ -1,29 +1,44 @@
 import { Title, Category, CardProduct } from 'components';
-import { connect } from 'react-redux';
+import {useState, useEffect} from 'react';
+import {product} from '../../configs/product/product'
 
-export const mapStateToProps =  (state) => {
-  return {
-    products: state.shop.products,
-  };
-};
+const allCategories = ['All', ...new Set(product.map(item => item.kategori))];
 
-const Catalog = ({ products }) => {
+const Catalog = () => {
+  const [categories, setCategories] = useState(allCategories);
+  const [menuItems, setMenuItems] = useState(product);
+
+    const filter = (kategori) =>{
+        if(kategori === 'All'){
+            setMenuItems(product)
+            return;
+        }
+        const filteredData  = product.filter((item)=>{
+            return item.kategori === kategori;
+        })
+        setMenuItems(filteredData);
+    }
+
   return (
     <div>
       <Title label="Belgian - Catalog" />
-      <Category />
+      <Category  filter={filter} categories={categories}/>
 
       <div className="container pt-4 pb-4">
         <div className="card product">
-          {products.map((prod) => (
+          
             <div data-aos="fade-right">
-              <CardProduct key={prod.id} productData = {prod} />
+              <CardProduct 
+               
+              productData = {menuItems}
+              className="grid"
+              />
             </div>
-          ))}
+          
         </div>
       </div>
     </div>
   );
 };
 
-export default connect(mapStateToProps)(Catalog);
+export default Catalog;

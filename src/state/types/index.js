@@ -6,5 +6,6 @@ export {
   REMOVE_ITEM,
   ADJUST_QTY,
   LOAD_CURRENT_ITEM,
-  ADD_TO_WISHLIST
+  ADD_TO_WISHLIST,
+  
 } from './cart-types';
