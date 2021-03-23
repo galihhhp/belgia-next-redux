@@ -4,13 +4,13 @@ import 'styles/global.scss';
 import { Navbar } from 'components';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import {useEffect} from 'react'
+import React, { useEffect } from 'react'
 
 
 const App = ({ Component, pageProps }) => {
-  useEffect(() =>{
-    Aos.init({duration:2000})
-  },[])  
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
   return (
     <Provider store={store}>
       <Navbar />
