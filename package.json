@@ -49,9 +49,21 @@
       "pre-commit": "lint-staged"
     }
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/*.{js,jsx}",
+      "src/utils/*.{js,jsx}"
     ]
   }
 }
