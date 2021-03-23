@@ -16,13 +16,13 @@ export const product = [
     merk: 'Vivo',
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    kategori: 'electronic',
+    kategori: 'Electronic',
   },
   {
     id: 2,
     name: 'Playstasion 5',
     img:
-      'https://images.bisnis-cdn.com/posts/2020/11/04/1313430/playstation-5.jpg',
+      'https://images-na.ssl-images-amazon.com/images/I/71PMC4DWWFL._AC_SL1500_.jpg',
     price: 10000000,
     location: 'Kota Surabaya',
     shop: 'Surabaya Elektronik',
@@ -35,7 +35,7 @@ export const product = [
     merk: 'Sony',
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    kategori: 'electronic',
+    kategori: 'Electronic',
   },
   {
     id: 3,
@@ -54,63 +54,7 @@ export const product = [
     merk: 'Phillips',
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    kategori: 'electronic',
-  },
-  {
-    id: 4,
-    name: 'Gundam AF',
-    img:
-      'https://images-na.ssl-images-amazon.com/images/I/71SzkAE9OrL._AC_SY450_.jpg',
-    price: 2000000,
-    location: 'Kota Palembang',
-    shop: 'Palembang Toys',
-    terjual: 58,
-    stok: 8,
-    ulasan: 12,
-    diskusi: 32,
-    kondisi: 'Baru',
-    berat: '900 gram',
-    merk: 'Bandai',
-    deskripsi:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    kategori: 'others',
-  },
-  {
-    id: 5,
-    name: 'YNH Book',
-    img: 'https://cf.shopee.co.id/file/d06900c7e6144938e598b7dbe4b72166',
-    price: 45000,
-    location: 'Kota Solo',
-    shop: 'Solo Book Store',
-    terjual: 58,
-    stok: 8,
-    ulasan: 12,
-    diskusi: 32,
-    kondisi: 'Baru',
-    berat: '400 gram',
-    merk: 'Gramedia',
-    deskripsi:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    kategori: 'others',
-  },
-  {
-    id: 6,
-    name: 'Light Saber',
-    img:
-      'https://images-na.ssl-images-amazon.com/images/I/41rvYpkxkuL._AC_SL1000_.jpg',
-    price: 4000000,
-    location: 'Kota Bogor',
-    shop: 'Bogor Toys',
-    terjual: 58,
-    stok: 8,
-    ulasan: 12,
-    diskusi: 32,
-    kondisi: 'Baru',
-    berat: '1 kilo',
-    merk: 'Starwars',
-    deskripsi:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    kategori: 'others',
+    kategori: 'Electronic',
   },
   {
     id: 7,
@@ -129,7 +73,7 @@ export const product = [
     merk: 'Maicih',
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    kategori: 'culinary',
+    kategori: 'Food & Drinks',
   },
   {
     id: 8,
@@ -148,7 +92,7 @@ export const product = [
     merk: 'Yamato',
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    kategori: 'culinary',
+    kategori: 'Food & Drinks',
   },
   {
     id: 9,
@@ -167,7 +111,7 @@ export const product = [
     merk: 'Pronas',
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    kategori: 'culinary',
+    kategori: 'Food & Drinks',
   },
   {
     id: 10,
@@ -224,5 +168,61 @@ export const product = [
     deskripsi:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     kategori: 'Fashion',
+  },
+  {
+    id: 4,
+    name: 'Gundam AF',
+    img:
+      'https://images-na.ssl-images-amazon.com/images/I/71SzkAE9OrL._AC_SY450_.jpg',
+    price: 2000000,
+    location: 'Kota Palembang',
+    shop: 'Palembang Toys',
+    terjual: 58,
+    stok: 8,
+    ulasan: 12,
+    diskusi: 32,
+    kondisi: 'Baru',
+    berat: '900 gram',
+    merk: 'Bandai',
+    deskripsi:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    kategori: 'Others',
+  },
+  {
+    id: 5,
+    name: 'YNH Book',
+    img: 'https://cf.shopee.co.id/file/d06900c7e6144938e598b7dbe4b72166',
+    price: 45000,
+    location: 'Kota Solo',
+    shop: 'Solo Book Store',
+    terjual: 58,
+    stok: 8,
+    ulasan: 12,
+    diskusi: 32,
+    kondisi: 'Baru',
+    berat: '400 gram',
+    merk: 'Gramedia',
+    deskripsi:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    kategori: 'Others',
+  },
+  {
+    id: 6,
+    name: 'Light Saber',
+    img:
+      'https://images-na.ssl-images-amazon.com/images/I/41rvYpkxkuL._AC_SL1000_.jpg',
+    price: 4000000,
+    location: 'Kota Bogor',
+    shop: 'Bogor Toys',
+    terjual: 58,
+    stok: 8,
+    ulasan: 12,
+    diskusi: 32,
+    kondisi: 'Baru',
+    berat: '1 kilo',
+    merk: 'Starwars',
+    deskripsi:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    kategori: 'Others',
   },
 ];

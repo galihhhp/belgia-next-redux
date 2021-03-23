@@ -1,4 +1,21 @@
-.card-detail-page {
+.wishlist-item {
+  .card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+  .positioner {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .icon {
+    position: absolute;
+    right: -120px;
+    top: 20px;
+  }
   .aws-btn {
     --button-default-height: 48px;
     --button-default-font-size: 14px;

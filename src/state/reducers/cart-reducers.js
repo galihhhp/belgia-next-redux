@@ -1,56 +1,43 @@
 import {
   ADD_ITEM,
-  ADD_TO_CART_SUCCESS,
-  ADD_TO_CART_ERROR,
-  ADD_TO_CART_REQUEST,
   REMOVE_ITEM,
   ADJUST_QTY,
   LOAD_CURRENT_ITEM,
+  CHECKOUT_ACTION,
 } from 'state/types';
 import { product } from 'configs/product/product';
 
 const initialState = {
   cart: [],
-  loading: false,
-  error: null,
   products: product,
   currentItem: null,
 };
 
-const addToCartRequest = (state) =>
-  Object.assign({}, state, { loading: true }, { error: null });
-
-const addToCartSuccess = (state, action) =>
-  Object.assign(
-    {},
-    state,
-    {
-      cartItems: state.cartItems.concat(action.payload),
-    },
-    { loading: false }
-  );
-const addToCartError = (state, action) =>
-  Object.assign({}, state, { loading: false }, { error: action.error });
-
 const cartReducers = (state = initialState, action) => {
   switch (action.type) {
     case ADD_ITEM:
-      const item = state.products.find(prod => prod.id === action.payload.id)
-      const inCart = state.cart.find(item => item.id === action.payload.id)
+      const item = state.products.find((prod) => prod.id === action.payload.id);
+      const inCart = state.cart.find((item) => item.id === action.payload.id);
       return {
         ...state,
         cart: inCart
-          ? state.cart.map(item =>
-            item.id === action.payload.id
-              ? { ...item, qty: item.qty + 1 }
-              : item)
+          ? state.cart.map((item) =>
+              item.id === action.payload.id
+                ? { ...item, qty: item.qty + 1 }
+                : item
+            )
           : [...state.cart, { ...item, qty: 1 }],
-      }
+      };
     case REMOVE_ITEM:
       return {
         ...state,
-        cart: state.cart.filter((item) => item.id !== action.payload.id)
-      }
+        cart: state.cart.filter((item) => item.id !== action.payload.id),
+      };
+    case CHECKOUT_ACTION:
+      const deleteAllItems = state.cart.filter((item) => {
+        item.id !== action.payload.id;
+      });
+      return deleteAllItems;
     case ADJUST_QTY:
       return {
         ...state,
@@ -64,13 +51,7 @@ const cartReducers = (state = initialState, action) => {
       return {
         ...state,
         currentItem: action.payload,
-      }
-    case ADD_TO_CART_REQUEST:
-      return addToCartRequest(state);
-    case ADD_TO_CART_SUCCESS:
-      return addToCartSuccess(state, action);
-    case ADD_TO_CART_ERROR:
-      return addToCartError(state, action);
+      };
     default:
       return state;
   }

@@ -1,9 +1,10 @@
 import { Title } from 'components';
 import { CartItems, Button } from 'components';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Icon from '../../components/icon';
+import { checkoutAction } from '../../state/actions';
 
 const Cart = ({ cart, result }) => {
   const [totalPrice, setTotalPrice] = useState(0);
@@ -29,45 +30,42 @@ const Cart = ({ cart, result }) => {
         <div className="row">
           <div className="col">
             {cart.length ? (
-              cart.map((item) =>
-
-                  <CartItems key={item.id} itemData={item} />
-
-              )) : (
-                <div className="text-center pt-4 pb-4">
-                <Icon 
-                name="cartempty"
-                height="25rem"
-                width="25rem"
-                />
-                  <h1 className="pt-3">YOUR SHOPPING CART IS EMPTY</h1>
-                  <Link href="/catalog">continue shopping</Link>
-                </div>
-              )}
+              cart.map((item) => <CartItems key={item.id} itemData={item} />)
+            ) : (
+              <div className="text-center pt-4 pb-4">
+                <Icon name="cartempty" height="25rem" width="25rem" />
+                <h1 className="pt-3">YOUR SHOPPING CART IS EMPTY</h1>
+                <Link href="/catalog">continue shopping</Link>
+              </div>
+            )}
           </div>
           <div className="col">
             <div className=" pt-3 pr-3 pl-3 pb-3">
-                <div className="card pb-3 border border-dark" >
-                  <div className="pl-3">
-
-                    <h1 className="card-title">CART SUMMARY</h1>
-                    <h5 className="card-text">TOTAL: {totalItems} items</h5>
-                    <h5 className="card-text"> {(result =
-                      'Rp. ' +
-                      totalPrice.toLocaleString(undefined, {
-                        minimumFractionDigits: 0,
-                        maximumFractionDigits: 2,
-                      }))}
-                    </h5>
-                    <div className="pt-3 pb-3">
-                      <Button 
+              <div className="card pb-3 border border-dark">
+                <div className="pl-3">
+                  <h1 className="card-title">CART SUMMARY</h1>
+                  <h5 className="card-text">TOTAL: {totalItems} items</h5>
+                  <h5 className="card-text">
+                    {' '}
+                    {
+                      (result =
+                        'Rp. ' +
+                        totalPrice.toLocaleString(undefined, {
+                          minimumFractionDigits: 0,
+                          maximumFractionDigits: 2,
+                        }))
+                    }
+                  </h5>
+                  <div className="pt-3 pb-3">
+                    <Button
                       blue
-                      label = "checkout"
-                      size ="md"
-                      />
-                    </div>
+                      label="checkout"
+                      size="md"
+                      onClick={(cart) => checkoutAction(cart.id)}
+                    />
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -75,7 +73,7 @@ const Cart = ({ cart, result }) => {
     </div>
   );
 };
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, dispatch) => {
   return {
     cart: state.shop.cart,
   };
