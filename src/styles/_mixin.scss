@@ -1,0 +1,5 @@
+@mixin hover($bg-color, $text-color) {
+  font-weight: bold;
+  background-color: $bg-color;
+  color: $text-color;
+}

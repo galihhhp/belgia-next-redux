@@ -1,0 +1,41 @@
+.card-product {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  .card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+  .positioner {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .icon {
+    position: absolute;
+    right: -120px;
+    top: 20px;
+  }
+  .aws-btn {
+    --button-default-height: 48px;
+    --button-default-font-size: 14px;
+    --button-default-border-radius: 6px;
+    --button-horizontal-padding: 20px;
+    --button-raise-level: 5px;
+    --button-hover-pressure: 2;
+    --transform-speed: 0.185s;
+    --button-primary-color: #20bed3;
+    --button-primary-color-dark: #e4e6e7;
+    --button-primary-color-light: #d4d9e4;
+    --button-primary-color-hover: #20bed3;
+    --button-primary-border: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .card-product {
+    grid-template-columns: auto;
+  }
+}

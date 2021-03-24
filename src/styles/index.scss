@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'bootstrap';
+@import 'fonts';
+@import 'mixin';
+
+@import './components/button';
+@import './components/card-product';
+@import './components/category';
+@import './components/item';
+@import './components/navbar';
+@import './components/wishlist-button';
+@import './components/card-detail-image';
+@import './components/icon';
+@import './components/wishlist-items';
+
+@import './pages/cart';
+@import './pages/catalog';
+@import './pages/catalog-detail';
+@import './pages/wishlist';
+@import './pages/home';
