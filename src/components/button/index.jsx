@@ -14,7 +14,7 @@ const Button = ({
   disabled,
   onClick,
   value,
-  onChange
+  onChange,
 }) => {
   return (
     <button

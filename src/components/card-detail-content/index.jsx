@@ -4,19 +4,25 @@ const CardDetailContent = ({
   terjual,
   ulasan,
   diskusi,
+  price,
   kondisi,
   berat,
   merk,
   stok,
   location,
   deskripsi,
-  price,
+  result,
 }) => {
   return (
-    <div className="container pr-1 ml-4 card-detail-content">
-      <div className="card border-0">
+    <div className="card-detail-content">
+      <div className="card-title">
         <h2 className="font-weight-bold">{name}</h2>
+      </div>
+      <div className="card-text">
         <p>{shop}</p>
+      </div>
+
+      <div className="card-text">
         <div className="d-flex">
           <p>
             Sold <span className="font-weight-bold ml-3">{terjual}</span>
@@ -28,12 +34,29 @@ const CardDetailContent = ({
             Discussions <span className="font-weight-bold ml-3">{diskusi}</span>
           </p>
         </div>
-        <h3 className="font-weight-bold">{price}</h3>
+      </div>
 
-        <div className="mt-4 card-detail-content__specification">
-          <div className="card-detail-content__specification__title">
+      <div className="card-text">
+        <h3 className="font-weight-bold">
+          {
+            (result =
+              'Rp. ' +
+              price.toLocaleString(undefined, {
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2,
+              }))
+          }
+        </h3>
+      </div>
+
+      <div className="mt-4 card-detail-content__specification">
+        <div className="card-detail-content__specification__title">
+          <div className="card-text">
             <h4 className="font-weight-bold">Specification</h4>
           </div>
+        </div>
+
+        <div className="card-text">
           <div className="d-flex">
             <div className=" mr-5 card-detail-content__specification--left">
               <p className="mb-1 pt-2">Condition</p>
@@ -51,11 +74,17 @@ const CardDetailContent = ({
             </div>
           </div>
         </div>
-        <div className="mt-4 card-detail-content__description">
-          <div className="card-detail-content__description__title">
+      </div>
+
+      <div className="mt-4 card-detail-content__description">
+        <div className="card-detail-content__description__title">
+          <div className="card-text">
             <h4 className="font-weight-bold">Description</h4>
           </div>
-          <div className=" mr-5 card-detail-content__specification--left">
+        </div>
+
+        <div className=" mr-5 card-detail-content__specification--left">
+          <div className="card-text">
             <p className="mb-1 pt-2">{deskripsi}</p>
           </div>
         </div>
