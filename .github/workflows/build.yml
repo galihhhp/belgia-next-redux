@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Run tests
-        run: yarn lint && yarn test
+        run: yarn lint
       - name: Deploy to heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
