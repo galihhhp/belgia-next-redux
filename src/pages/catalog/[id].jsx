@@ -48,7 +48,7 @@ export const CatalogDetail = ({ product }) => {
                 </div>
               </div>
 
-              <div className=" col">
+              <div className="col mt-4">
                 <CardDetailContent key={product.id} {...product} />
               </div>
             </div>
