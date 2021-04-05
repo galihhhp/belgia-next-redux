@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "lint": "eslint src",
+    "lint": "eslint src",                                           
     "test": "react-scripts test",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
   },
