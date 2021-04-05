@@ -1,3 +1,4 @@
+import {React} from 'react';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 import { Button } from 'components';

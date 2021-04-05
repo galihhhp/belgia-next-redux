@@ -1,3 +1,4 @@
+import { React } from 'react';
 import { Title } from 'components';
 import { CartItems, Button } from 'components';
 import { connect, useDispatch } from 'react-redux';
@@ -33,7 +34,7 @@ const Cart = ({ cart, result }) => {
               cart.map((item) => <CartItems key={item.id} itemData={item} />)
             ) : (
               <div className="text-center pt-4 pb-4">
-                <Icon name="cartempty" height="25rem" width="25rem" />
+                <Icon name="cartempty" height="12rem" width="12rem" className="text-center" />
                 <h1 className="pt-3">YOUR SHOPPING CART IS EMPTY</h1>
                 <Link href="/catalog">continue shopping</Link>
               </div>

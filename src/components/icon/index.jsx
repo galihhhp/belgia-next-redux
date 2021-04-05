@@ -1,3 +1,4 @@
+import {React} from 'react';
 import {Trash} from './trash-button';
 import {CartEmpty} from './cart-empty'
 
