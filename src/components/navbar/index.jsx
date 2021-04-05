@@ -1,3 +1,4 @@
+import { React} from  "react";
 import Link from 'next/link';
 import ROUTES from 'configs/routes';
 import {connect} from 'react-redux'
