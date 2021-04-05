@@ -1,3 +1,4 @@
+import { React} from "react";
 import { Title, Category, CardProduct } from 'components';
 import { useState } from 'react';
 import { product } from '../../configs/product/product';
