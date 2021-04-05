@@ -1,4 +1,5 @@
-import { CardDetailImage, CardDetailContent, Title, Button } from 'components';
+import { React} from "react";
+import { CardDetailImage, CardDetailContent, Title} from 'components';
 import { product } from 'configs/product/product';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../state/actions';

@@ -1,3 +1,4 @@
+import {React} from "react";
 import { useRouter } from 'next/router';
 import ROUTES from 'configs/routes';
 import { Title, Button } from 'components';
@@ -16,7 +17,7 @@ const Home = () => {
       className="d-flex flex-column justify-content-center align-items-center w-100 home__content" 
       data-aos="zoom-in">
         <h1>Welcome to Belgian Shop</h1>
-        <h4 className="mb-5">
+        <h4 className="mb-5 text-center">
           We provide all your needs and you can get it from home
         </h4>
         <Button
