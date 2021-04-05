@@ -22,6 +22,7 @@ const Button = ({
       type="button"
       className={classNames(
         'btn',
+        'mb-2',
         { btn__blue: blue },
         { btn__white: white },
         { btn__transparent: transparent },

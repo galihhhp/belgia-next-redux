@@ -1,3 +1,4 @@
+import { React} from "react";
 import { Button } from 'components';
 
 const Category = ({filter, categories}) => {
@@ -12,7 +13,7 @@ const Category = ({filter, categories}) => {
 
             <div className="row pt-4 pb-2">
               { categories.map((cat, i)=>{
-              return <Button label="Food & Drink" 
+              return <Button 
               rounded mr white 
               onClick={() => filter(cat)}
               key={i}
