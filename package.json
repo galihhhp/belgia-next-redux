@@ -16,6 +16,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
     "classnames": "^2.2.6",
+    "firebase": "^8.3.2",
     "next": "10.0.7",
     "react": "17.0.1",
     "react-awesome-button": "^6.5.1",
